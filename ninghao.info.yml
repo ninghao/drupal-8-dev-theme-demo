@@ -14,3 +14,6 @@ regions:
 
 libraries:
   - ninghao/global-styling
+
+libraries-override:
+  core/modernizr: false
