@@ -8,3 +8,9 @@ global-styling:
     js/script.js: {}
   dependencies:
     - core/picturefill
+
+user.icons:
+  version: VERSION
+  css:
+    theme:
+      css/user.icons.admin.css: {}
