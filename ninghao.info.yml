@@ -17,3 +17,7 @@ libraries:
 
 libraries-override:
   core/modernizr: false
+  classy/dialog:
+    css:
+      component:
+        css/components/dialog.css: css/components/dialog.css
