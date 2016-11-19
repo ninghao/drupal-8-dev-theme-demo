@@ -1,0 +1,28 @@
+name: 演示主题
+description: 宁皓网课程里做的演示主题
+type: theme
+core: 8.x
+base theme: classy
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+
+libraries:
+  - ninghao/global-styling
+  - ninghao/fontawesome
+
+libraries-override:
+  core/modernizr: false
+  classy/dialog:
+    css:
+      component:
+        css/components/dialog.css: css/components/dialog.css
+
+libraries-extend:
+  user/drupal.user.icons:
+    - ninghao/user.icons
