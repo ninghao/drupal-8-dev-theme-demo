@@ -1,7 +1,7 @@
 global-styling:
   version: VERSION
   css:
-    theme:
+    base:
       css/style.css: {}
   header: true
   js:
