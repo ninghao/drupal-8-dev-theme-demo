@@ -14,3 +14,13 @@ user.icons:
   css:
     theme:
       css/user.icons.admin.css: {}
+
+fontawesome:
+  remote: http://fontawesome.io/
+  version: 4.7.0
+  license:
+    name: MIT
+    gpl-compatible: true
+  css:
+    theme:
+      https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css: { type: external, minified: true}

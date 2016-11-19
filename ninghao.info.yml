@@ -14,6 +14,7 @@ regions:
 
 libraries:
   - ninghao/global-styling
+  - ninghao/fontawesome
 
 libraries-override:
   core/modernizr: false
