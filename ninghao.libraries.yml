@@ -6,3 +6,5 @@ global-styling:
   header: true
   js:
     js/script.js: {}
+  dependencies:
+    - core/picturefill
