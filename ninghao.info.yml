@@ -11,3 +11,6 @@ regions:
   page_bottom: 'Page bottom'
   breadcrumb: 'Breadcrumb'
   content: 'Content'
+
+libraries:
+  - ninghao/global-styling
