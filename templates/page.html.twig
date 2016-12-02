@@ -1,4 +1,9 @@
 <div class="ui container">
   {{ page.header }}
+
+  {% set string = 'hello' %}
+  {{ string }}
+  <pre>{{ dump(string, logged_in, is_admin) }}</pre>
+
   {{ page.content }}
 </div>
