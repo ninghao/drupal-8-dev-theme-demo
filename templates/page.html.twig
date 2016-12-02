@@ -1,15 +1,6 @@
 <div class="ui container">
   {{ page.header }}
 
-  <a class="ui button" href="{{ path('entity.user.canonical', {'user': user.id}) }}">
-    {{ 'Profile'|t }}
-  </a>
-
-  <a class="ui button" href="{{ path('entity.user.edit_form', {'user': user.id}) }}">
-    {{ 'Edit'|t }}
-  </a>
-
-  <pre>{{ dump(user) }}</pre>
 
   {{ page.content }}
 </div>

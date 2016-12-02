@@ -1,0 +1,6 @@
+<?php
+
+function ninghao_preprocess_html(&$variables) {
+  // kint($variables);
+  $variables['attributes']['class'][] = 'dark';
+}
