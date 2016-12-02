@@ -5,5 +5,16 @@
   {{ string }}
   <pre>{{ dump(string, logged_in, is_admin) }}</pre>
 
+  {% if is_admin %}
+  <div class="ui positive message">
+    {{ string }}
+  </div>
+  {% endif %}
+
+  {% set users = ['wanghao', 'xiaoxue'] %}
+  {% for user in users %}
+  {{ user }}
+  {% endfor %}
+
   {{ page.content }}
 </div>
