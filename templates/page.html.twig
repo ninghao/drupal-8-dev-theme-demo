@@ -1,11 +1,15 @@
 <div class="ui container">
   {{ page.header }}
 
-  {% set users = ['wanghao', 'xiaoxue'] %}
-  <pre>{{ users|json_encode }}</pre>
-  <pre>{{ users|join(', ') }}</pre>
+  <a class="ui button" href="{{ path('entity.user.canonical', {'user': user.id}) }}">
+    {{ 'Profile'|t }}
+  </a>
 
-  <button class="ui button">{{ 'Submit'|t }}</button>
+  <a class="ui button" href="{{ path('entity.user.edit_form', {'user': user.id}) }}">
+    {{ 'Edit'|t }}
+  </a>
+
+  <pre>{{ dump(user) }}</pre>
 
   {{ page.content }}
 </div>
