@@ -1,20 +1,11 @@
 <div class="ui container">
   {{ page.header }}
 
-  {% set string = 'hello' %}
-  {{ string }}
-  <pre>{{ dump(string, logged_in, is_admin) }}</pre>
-
-  {% if is_admin %}
-  <div class="ui positive message">
-    {{ string }}
-  </div>
-  {% endif %}
-
   {% set users = ['wanghao', 'xiaoxue'] %}
-  {% for user in users %}
-  {{ user }}
-  {% endfor %}
+  <pre>{{ users|json_encode }}</pre>
+  <pre>{{ users|join(', ') }}</pre>
+
+  <button class="ui button">{{ 'Submit'|t }}</button>
 
   {{ page.content }}
 </div>
